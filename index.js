@@ -34,9 +34,11 @@ else if(req.body.queryResult.action == 'add'){
 			mycustomresponse ="value should not be greater than 1000";
 		
 		return res.json({
-        speech: mycustomresponse ,
-        displayText: 'test',
-        source: 'get-movie-details'
+        
+"text": {
+    'test'
+  }
+
 		});
 	}
 	else if(req.body.result.action == 'add'){
