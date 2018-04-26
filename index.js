@@ -37,18 +37,17 @@ else if(req.body.queryResult.action == 'add'){
         
 "fulfillmentText": "hello world",
 "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            
+"hello world"
+          ]
+        }
+      }
+    ]
 
-{
-
-"text": [
-
-object("text response")
-
-],
-
-}
-
-],"payload": {
+,"payload": {
 
 "google": {
 
