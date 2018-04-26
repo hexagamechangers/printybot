@@ -18,107 +18,100 @@ server.use(bodyParser.urlencoded({
 server.use(bodyParser.json());
 
 server.post('/get-movie-details', (req, res) => {
-	var mycustomresponse ="";
-if(req.body.queryResult.action =='getprinterlist'){
-	fs.readFile("./app/data/data.json",'utf8',function (err, data) {
+    var mycustomresponse = "";
+    if (req.body.queryResult.action == 'getprinterlist') {
+        fs.readFile("./app/data/data.json", 'utf8', function (err, data) {
             if (err) throw err;
-            var printerObj=JSON.parse(data);
-            res.send('result:'+JSON.stringify(printerObj));
-          });
-}
-else if(req.body.queryResult.action == 'add'){
-		value = value + 10;
-        if(value<1000)  
-            mycustomresponse = value;
-		else 
-			mycustomresponse ="value should not be greater than 1000";
-		
-		return res.json({
-        
-"fulfillmentText": "hello world",
-"fulfillmentMessages": [
-      {
-        "text": {
-          "text": [
-            
-"hello world"
-          ]
-        }
-      }
-    ]
-
-,
-
-"card": {
-    {
-  "title": "Avengers Inifnity War - Part 1",
-  "subtitle": "Part - 1",
-  "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
-  "buttons": [
-    {
-      {
-  "text": "Click Me !!",
-  "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
-}
+            var printerObj = JSON.parse(data);
+            res.send('result:' + JSON.stringify(printerObj));
+        });
     }
-  ]
-}
-  },
-"payload": {
+    else if (req.body.queryResult.action == 'add') {
+        value = value + 10;
+        if (value < 1000)
+            mycustomresponse = value;
+        else
+            mycustomresponse = "value should not be greater than 1000";
 
-"google": {
+        return res.json({
 
-"expectUserResponse": true,
+            "fulfillmentText": "hello world",
+            "fulfillmentMessages": [
+                  {
+                      "text": {
+                          "text": [
 
-"richResponse": {
+                "hello world"
+                          ]
+                      }
+                  }
+            ],
+            "card": {
+                "title": "Avengers Inifnity War - Part 1",
+                "subtitle": "Part - 1",
+                "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                "buttons": [
+                        {
+                            "text": "Click Me !!",
+                            "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+                        }
+                ]
+            },
+            "payload": {
 
-"items": [
+                "google": {
 
-{
+                    "expectUserResponse": true,
 
-"simpleResponse": {
+                    "richResponse": {
 
-"textToSpeech": "this is a simple response"
+                        "items": [
 
-}
+                        {
 
-}
+                            "simpleResponse": {
 
-]
+                                "textToSpeech": "this is a simple response"
 
-}
+                            }
 
-},
+                        }
 
-"facebook": {
+                        ]
 
-"text": "Hello, Facebook!"
+                    }
 
-},
+                },
 
-"slack": {
+                "facebook": {
 
-"text": "This is a text response for Slack."
+                    "text": "Hello, Facebook!"
 
-}
+                },
 
-},
+                "slack": {
 
-		});
-	}
-	else if(req.body.result.action != 'add'){
-		return res.json({
-        speech: req.body.result.action ,
-        displayText: req.body.result.action,
-        source: 'get-movie-details'
-    });
-	}
-	else
-    return res.json({
-        speech: req.body.result.action ,
-        displayText: req.body.result.action,
-        source: 'get-movie-details'
-    });
+                    "text": "This is a text response for Slack."
+
+                }
+
+            },
+
+        });
+    }
+    else if (req.body.result.action != 'add') {
+        return res.json({
+            speech: req.body.result.action,
+            displayText: req.body.result.action,
+            source: 'get-movie-details'
+        });
+    }
+    else
+        return res.json({
+            speech: req.body.result.action,
+            displayText: req.body.result.action,
+            source: 'get-movie-details'
+        });
 }, (error) => {
     return res.json({
         speech: 'Something went wrong!',
@@ -128,29 +121,29 @@ else if(req.body.queryResult.action == 'add'){
 });
 //////////////////////////
 
-	server.get('/add', function(req, res) {	     
-        value = value + 10;
-        if(value<1000)  
-            res.send('Value :' + value);
-        else
-            res.status(400).send("value should not be greater than 1000");
-    });	
-    server.get('/remove', function(req, res) {	     
-        value = value - 10;
-        if(value>0)  
-            res.send('Value :' + value);
-        else
-            res.status(400).send("value should not be Less than 0");
-	});	
+server.get('/add', function (req, res) {
+    value = value + 10;
+    if (value < 1000)
+        res.send('Value :' + value);
+    else
+        res.status(400).send("value should not be greater than 1000");
+});
+server.get('/remove', function (req, res) {
+    value = value - 10;
+    if (value > 0)
+        res.send('Value :' + value);
+    else
+        res.status(400).send("value should not be Less than 0");
+});
 
-server.get('/api/getprinterlist', function(req, res) {	
-        fs.readFile("./app/data/data.json",'utf8',function (err, data) {
-            if (err) throw err;
-            var printerObj=JSON.parse(data);
-            res.send('result:'+JSON.stringify(printerObj));
-          });
-       
-    });	
+server.get('/api/getprinterlist', function (req, res) {
+    fs.readFile("./app/data/data.json", 'utf8', function (err, data) {
+        if (err) throw err;
+        var printerObj = JSON.parse(data);
+        res.send('result:' + JSON.stringify(printerObj));
+    });
+
+});
 
 server.listen((process.env.PORT || 8000), () => {
     console.log("Server is up and running...");
