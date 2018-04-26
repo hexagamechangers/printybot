@@ -47,7 +47,24 @@ else if(req.body.queryResult.action == 'add'){
       }
     ]
 
-,"payload": {
+,
+
+"card": {
+    {
+  "title": "Avengers Inifnity War - Part 1",
+  "subtitle": "Part - 1",
+  "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+  "buttons": [
+    {
+      {
+  "text": "Click Me !!",
+  "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+}
+    }
+  ]
+}
+  },
+"payload": {
 
 "google": {
 
