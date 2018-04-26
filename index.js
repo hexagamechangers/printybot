@@ -19,14 +19,14 @@ server.use(bodyParser.json());
 
 server.post('/get-movie-details', (req, res) => {
 	var mycustomresponse ="";
-if(req.body.result.action =='getprinterlist'){
+if(req.body.queryResult.action =='getprinterlist'){
 	fs.readFile("./app/data/data.json",'utf8',function (err, data) {
             if (err) throw err;
             var printerObj=JSON.parse(data);
             res.send('result:'+JSON.stringify(printerObj));
           });
 }
-else if(req.body.result.action == 'add'){
+else if(req.body.queryResult.action == 'add'){
 		value = value + 10;
         if(value<1000)  
             mycustomresponse = value;
