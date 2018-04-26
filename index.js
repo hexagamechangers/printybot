@@ -26,6 +26,64 @@ server.post('/get-movie-details', (req, res) => {
             res.send('result:' + JSON.stringify(printerObj));
         });
     }
+    else if (req.body.queryResult.action == 'carousel') {
+        return res.json({
+
+            "fulfillmentText": "hello world",
+            "fulfillmentMessages": [
+                  {
+                      "carouselSelect": {
+                          "items": [
+                                    {
+                                        "info": {
+                                            "key": "Item 1",
+                                            "synonyms": [
+                                              "Item 1 synonyms"
+                                            ]
+                                        },
+                                        "title": "Item 1 Title",
+                                        "description": "Item 1 Description",
+                                        "image": {
+                                            "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                                            "accessibilityText": "Avengers Movie Poster"
+                                        }
+
+                                    },
+                                    {
+                                        "info": {
+                                            "key": "Item 2",
+                                            "synonyms": [
+                                              "Item 2 synonyms"
+                                            ]
+                                        },
+                                        "title": "Item 2 Title",
+                                        "description": "Item 2 Description",
+                                        "image": {
+                                            "imageUri": "http://whatculture.com/comics/ant-man-and-the-wasp-10-reasons-to-be-excited",
+                                            "accessibilityText": "Ant Man and Wasp Movie Poster ||"
+                                        }
+
+                                    }
+
+                          ]
+
+                          //"title": "Avengers Inifnity War - Part 1",
+                          //"subtitle": "Part - 1",
+                          //"imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                          //"buttons": [
+                          //        {
+                          //            "text": "Click Me !!",
+                          //            "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+                          //        }
+                          //]
+                      }
+                  }
+            ]
+
+
+
+        });
+    }
     else if (req.body.queryResult.action == 'add') {
         value = value + 10;
         if (value < 1000)
