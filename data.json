@@ -1,0 +1,56 @@
+{
+    "printerlist": [
+        {
+            "id": "001",
+            "modelNo": "xyz232",
+            "Scanning": "true",
+            "WIFI": "true",
+            "Color": "RGB",
+            "only_B/W": "false",
+            "doubleSidePrinting": "true",
+            "assetTag": "ID0056",
+            "location": "LOC9945",
+            "inkLevel": "L2",
+            "CustomerServiceContacts": [
+                "asjdasd",
+                "sdfslkf"
+            ],
+            "Custom": "available",
+            "Styles": "style1",
+            "Size": "1000",
+            "Quality": "10000",
+            "rotation": "true",
+            "PortraitLandscape": "true",
+            "Fax": "true",
+            "email": "true",
+            "3D": "true",
+            "Secured": "true"
+        },
+        {
+            "id": "002",
+            "modelNo": "xyz252",
+            "Scanning": "true",
+            "WIFI": "true",
+            "Color": "RGB",
+            "only_B/W": "false",
+            "doubleSidePrinting": "true",
+            "assetTag": "ID0056",
+            "location": "LOC9945",
+            "inkLevel": "L2",
+            "CustomerServiceContacts": [
+                "asjdasd",
+                "sdfslkf"
+            ],
+            "Custom": "available",
+            "Styles": "style1",
+            "Size": "1000",
+            "Quality": "10000",
+            "rotation": "true",
+            "PortraitLandscape": "true",
+            "Fax": "true",
+            "email": "true",
+            "3D": "true",
+            "Secured": "true"
+        }
+    ]
+}

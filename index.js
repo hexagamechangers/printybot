@@ -8,6 +8,9 @@ var server = express()
 // app.get('/', function (req, res) { res.send('Hello World') })
 // app.listen(8080)
 
+var fs = require('fs');
+
+
 server.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -65,6 +68,15 @@ server.post('/get-movie-details', (req, res) => {
         else
             res.status(400).send("value should not be Less than 0");
 	});	
+
+server.get('/api/getprinterlist', function(req, res) {	
+        fs.readFile("./app/data/data.json",'utf8',function (err, data) {
+            if (err) throw err;
+            var printerObj=JSON.parse(data);
+            res.send('result:'+JSON.stringify(printerObj));
+          });
+       
+    });	
 
 server.listen((process.env.PORT || 8000), () => {
     console.log("Server is up and running...");
