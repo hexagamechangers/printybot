@@ -36,8 +36,11 @@ else if(req.body.queryResult.action == 'add'){
 		return res.json({
         
 "text": {
-    'text' : 'test'
-  }
+          
+"text": [
+ "hello world" ]
+
+        }
 
 		});
 	}
