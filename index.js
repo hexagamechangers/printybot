@@ -42,7 +42,7 @@ else if(req.body.queryResult.action == 'add'){
 
 "text": [
 
-"text response"
+object("text response")
 
 ],
 
