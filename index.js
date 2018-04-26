@@ -36,12 +36,12 @@ else if(req.body.queryResult.action == 'add'){
 		return res.json({
         
 "text": {
-    'test'
+    'text' : 'test'
   }
 
 		});
 	}
-	else if(req.body.result.action == 'add'){
+	else if(req.body.result.action != 'add'){
 		return res.json({
         speech: req.body.result.action ,
         displayText: req.body.result.action,
