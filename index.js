@@ -93,7 +93,18 @@ server.post('/get-movie-details', (req, res) => {
 
                 "slack": {
 
-                    "text": "This is a text response for Slack."
+                    //"text": "This is a text response for Slack."
+                    "card": {
+                        "title": "Avengers Inifnity War - Part 1",
+                        "subtitle": "Part - 1",
+                        "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                        "buttons": [
+                                {
+                                    "text": "Click Me !!",
+                                    "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+                                }
+                        ]
+                    }
 
                 }
 
