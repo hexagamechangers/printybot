@@ -19,7 +19,7 @@ server.use(bodyParser.json());
 
 server.post('/get-movie-details', (req, res) => {
 	var mycustomresponse ="";
-if(req.body.result.action =='getprinterlist'{
+if(req.body.result.action =='getprinterlist'){
 	fs.readFile("./app/data/data.json",'utf8',function (err, data) {
             if (err) throw err;
             var printerObj=JSON.parse(data);
