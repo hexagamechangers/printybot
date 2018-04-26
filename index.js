@@ -38,25 +38,27 @@ server.post('/get-movie-details', (req, res) => {
             "fulfillmentText": "hello world",
             "fulfillmentMessages": [
                   {
-                      "text": {
-                          "text": [
+                      //      "text": {
+                      //          "text": [
 
-                "hello world"
+                      //"hello world"
+                      //          ]
+                      //      }
+
+                      "card": {
+                          "title": "Avengers Inifnity War - Part 1",
+                          "subtitle": "Part - 1",
+                          "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                          "buttons": [
+                                  {
+                                      "text": "Click Me !!",
+                                      "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+                                  }
                           ]
                       }
                   }
             ],
-            "card": {
-                "title": "Avengers Inifnity War - Part 1",
-                "subtitle": "Part - 1",
-                "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
-                "buttons": [
-                        {
-                            "text": "Click Me !!",
-                            "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
-                        }
-                ]
-            },
+
             "payload": {
 
                 "google": {
