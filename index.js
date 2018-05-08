@@ -102,7 +102,7 @@ server.post('/get-movie-details', (req, res) => {
                       //      }
 
                       "card": {
-                          "title": "Avengers Inifnity War - Part 1",
+                          "title": "Avengers Inifnity War - Part 2",
                           "subtitle": "Part - 1",
                           "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
                           "buttons": [
@@ -114,7 +114,7 @@ server.post('/get-movie-details', (req, res) => {
                       }
                   }
             ],
-            "fulfillmentText": "hello world",
+            "fulfillmentText": "hello world1",
             "fulfillmentMessages": [
                   {
                       //      "text": {
@@ -125,7 +125,7 @@ server.post('/get-movie-details', (req, res) => {
                       //      }
 
                       "card": {
-                          "title": "Avengers Inifnity War - Part 1",
+                          "title": "Avengers Inifnity War - Part 2",
                           "subtitle": "Part - 1",
                           "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
                           "buttons": [
