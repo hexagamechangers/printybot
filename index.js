@@ -92,7 +92,28 @@ server.post('/get-movie-details', (req, res) => {
             mycustomresponse = "value should not be greater than 1000";
 
         return res.json({
+            "angularMessages": [
+                  {
+                      //      "text": {
+                      //          "text": [
 
+                      //"hello world"
+                      //          ]
+                      //      }
+
+                      "card": {
+                          "title": "Avengers Inifnity War - Part 1",
+                          "subtitle": "Part - 1",
+                          "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                          "buttons": [
+                                  {
+                                      "text": "Click Me !!",
+                                      "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+                                  }
+                          ]
+                      }
+                  }
+            ],
             "fulfillmentText": "hello world",
             "fulfillmentMessages": [
                   {
