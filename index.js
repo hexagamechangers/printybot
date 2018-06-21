@@ -31,53 +31,53 @@ server.post('/get-movie-details', (req, res) => {
 
             "fulfillmentText": "hello world",
             "fulfillmentMessages": [
-                  {
-                      "carouselSelect": {
-                          "items": [
-                                    {
-                                        "info": {
-                                            "key": "Item 1",
-                                            "synonyms": [
-                                              "Item 1 synonyms"
-                                            ]
-                                        },
-                                        "title": "Item 1 Title",
-                                        "description": "Item 1 Description",
-                                        "image": {
-                                            "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
-                                            "accessibilityText": "Avengers Movie Poster"
-                                        }
+                {
+                    "carouselSelect": {
+                        "items": [
+                            {
+                                "info": {
+                                    "key": "Item 1",
+                                    "synonyms": [
+                                        "Item 1 synonyms"
+                                    ]
+                                },
+                                "title": "Item 1 Title",
+                                "description": "Item 1 Description",
+                                "image": {
+                                    "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                                    "accessibilityText": "Avengers Movie Poster"
+                                }
 
-                                    },
-                                    {
-                                        "info": {
-                                            "key": "Item 2",
-                                            "synonyms": [
-                                              "Item 2 synonyms"
-                                            ]
-                                        },
-                                        "title": "Item 2 Title",
-                                        "description": "Item 2 Description",
-                                        "image": {
-                                            "imageUri": "http://whatculture.com/comics/ant-man-and-the-wasp-10-reasons-to-be-excited",
-                                            "accessibilityText": "Ant Man and Wasp Movie Poster ||"
-                                        }
+                            },
+                            {
+                                "info": {
+                                    "key": "Item 2",
+                                    "synonyms": [
+                                        "Item 2 synonyms"
+                                    ]
+                                },
+                                "title": "Item 2 Title",
+                                "description": "Item 2 Description",
+                                "image": {
+                                    "imageUri": "http://whatculture.com/comics/ant-man-and-the-wasp-10-reasons-to-be-excited",
+                                    "accessibilityText": "Ant Man and Wasp Movie Poster ||"
+                                }
 
-                                    }
+                            }
 
-                          ]
+                        ]
 
-                          //"title": "Avengers Inifnity War - Part 1",
-                          //"subtitle": "Part - 1",
-                          //"imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
-                          //"buttons": [
-                          //        {
-                          //            "text": "Click Me !!",
-                          //            "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
-                          //        }
-                          //]
-                      }
-                  }
+                        //"title": "Avengers Inifnity War - Part 1",
+                        //"subtitle": "Part - 1",
+                        //"imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                        //"buttons": [
+                        //        {
+                        //            "text": "Click Me !!",
+                        //            "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+                        //        }
+                        //]
+                    }
+                }
             ]
 
 
@@ -92,29 +92,29 @@ server.post('/get-movie-details', (req, res) => {
             mycustomresponse = "value should not be greater than 1000";
 
         return res.json({
-            
+
             "fulfillmentText": "hello world1",
             "fulfillmentMessages": [
-                  {
-                      //      "text": {
-                      //          "text": [
+                {
+                    //      "text": {
+                    //          "text": [
 
-                      //"hello world"
-                      //          ]
-                      //      }
+                    //"hello world"
+                    //          ]
+                    //      }
 
-                      "card": {
-                          "title": "Avengers Inifnity War - Part 2",
-                          "subtitle": "Part - 1",
-                          "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
-                          "buttons": [
-                                  {
-                                      "text": "Click Me !!",
-                                      "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
-                                  }
-                          ]
-                      }
-                  }
+                    "card": {
+                        "title": "Avengers Inifnity War - Part 2",
+                        "subtitle": "Part - 1",
+                        "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                        "buttons": [
+                            {
+                                "text": "Click Me !!",
+                                "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+                            }
+                        ]
+                    }
+                }
             ],
 
             "payload": {
@@ -127,15 +127,15 @@ server.post('/get-movie-details', (req, res) => {
 
                         "items": [
 
-                        {
+                            {
 
-                            "simpleResponse": {
+                                "simpleResponse": {
 
-                                "textToSpeech": "this is a simple response"
+                                    "textToSpeech": "this is a simple response"
+
+                                }
 
                             }
-
-                        }
 
                         ]
 
@@ -150,26 +150,26 @@ server.post('/get-movie-details', (req, res) => {
                 },
 
                 "angularMessages": [
-                  {
-                      //      "text": {
-                      //          "text": [
+                    {
+                        //      "text": {
+                        //          "text": [
 
-                      //"hello world"
-                      //          ]
-                      //      }
+                        //"hello world"
+                        //          ]
+                        //      }
 
-                      "card": {
-                          "title": "Avengers Inifnity War - Part 2",
-                          "subtitle": "Part - 1",
-                          "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
-                          "buttons": [
-                                  {
-                                      "text": "Click Me !!",
-                                      "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
-                                  }
-                          ]
-                      }
-                  }
+                        "card": {
+                            "title": "Avengers Inifnity War - Part 2",
+                            "subtitle": "Part - 1",
+                            "imageUri": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg",
+                            "buttons": [
+                                {
+                                    "text": "Click Me !!",
+                                    "postback": "https://i.ytimg.com/vi/y_DMuo9Oefc/maxresdefault.jpg"
+                                }
+                            ]
+                        }
+                    }
                 ],
 
                 "slack": {
@@ -256,12 +256,105 @@ server.get('/remove', function (req, res) {
 });
 
 server.get('/api/getprinterlist', function (req, res) {
-    fs.readFile("./app/data/data.json", 'utf8', function (err, data) {
+    fs.readFile("./app/data/printerdata.json", 'utf8', function (err, data) {
         if (err) throw err;
         var printerObj = JSON.parse(data);
         res.send('result:' + JSON.stringify(printerObj));
     });
 
+});
+
+// increment api/printerToner?model="model"&TonerLevelIncrease=value
+// decrement api/printerToner?model="model"&TonerLevelDecrease=value
+server.get('/api/printerToner', function (req, res) {
+    let queryparam = req.query;
+    fs.readFile("./app/data/printerdata.json", 'utf8', function (err, data) {
+        if (err) throw err;
+        let printerObj = JSON.parse(data).printerlist;
+        if (queryparam.model) {
+            let filteredResult = printerObj.filter((obj) => {
+                return obj.Model == queryparam.model;
+            });
+            if (queryparam.TonerLevelIncrease) {
+                filteredResult[0].CurrentTonerLevel = parseInt(filteredResult[0].CurrentTonerLevel) + parseInt(queryparam.TonerLevelIncrease);
+            } else if (queryparam.TonerLevelDecrease) {
+                filteredResult[0].CurrentTonerLevel = parseInt(filteredResult[0].CurrentTonerLevel) - parseInt(queryparam.TonerLevelIncrease);
+            }
+            printerObj.filter((obj) => {
+                if (obj.Model == filteredResult[0].model) {
+                    obj = filteredResult[0];
+                }
+            });
+            let resultObj = JSON.parse(data);
+            resultObj.printerlist = printerObj;
+            fs.writeFile('./app/data/printerdata.json', JSON.stringify(resultObj), function (err) {
+                if (err) throw err;
+                res.send('success');
+            });
+        }
+    });
+});
+
+// increment api/paperCapacity?model="model"&loadpaper=value
+// decrement api/paperCapacity?model="model"&printer=value
+server.get('/api/paperCapacity', function (req, res) {
+    let queryparam = req.query;
+    fs.readFile("./app/data/printerdata.json", 'utf8', function (err, data) {
+        if (err) throw err;
+        let printerObj = JSON.parse(data).printerlist;
+        if (queryparam.model) {
+            let filteredResult = printerObj.filter((obj) => {
+                return obj.Model == queryparam.model;
+            });
+            console.log(queryparam);
+            if (queryparam.loadpaper) {
+                filteredResult[0].paperCapacity = parseInt(filteredResult[0].paperCapacity) + parseInt(queryparam.loadpaper);
+            } else if (queryparam.printer) {
+                filteredResult[0].paperCapacity = parseInt(filteredResult[0].paperCapacity) - parseInt(queryparam.printer);
+            }
+            console.log(filteredResult);
+            printerObj.filter((obj) => {
+                if (obj.Model == filteredResult[0].model) {
+                    obj = filteredResult[0];
+                }
+            });
+            let resultObj = JSON.parse(data);
+            resultObj.printerlist = printerObj;
+            fs.writeFile('./app/data/printerdata.json', JSON.stringify(resultObj), function (err) {
+                if (err) throw err;
+                res.send('success');
+            });
+        }
+    });
+});
+
+// increment api/statusUpdate?model="model"&status=value
+server.get('/api/statusUpdate', function (req, res) {
+    let queryparam = req.query;
+    fs.readFile("./app/data/printerdata.json", 'utf8', function (err, data) {
+        if (err) throw err;
+        let printerObj = JSON.parse(data).printerlist;
+        if (queryparam.model) {
+            let filteredResult = printerObj.filter((obj) => {
+                return obj.Model == queryparam.model;
+            });
+            if (queryparam.status) {
+                filteredResult[0].status = queryparam.status;
+            }
+            console.log(filteredResult);
+            printerObj.filter((obj) => {
+                if (obj.Model == filteredResult[0].model) {
+                    obj = filteredResult[0];
+                }
+            });
+            let resultObj = JSON.parse(data);
+            resultObj.printerlist = printerObj;
+            fs.writeFile('./app/data/printerdata.json', JSON.stringify(resultObj), function (err) {
+                if (err) throw err;
+                res.send('success');
+            });
+        }
+    });
 });
 
 server.listen((process.env.PORT || 8000), () => {

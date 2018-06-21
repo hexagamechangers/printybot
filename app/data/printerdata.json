@@ -1,0 +1,50 @@
+{
+    "printerlist": [
+        {
+            "Model": "6510V/DN",
+            "CurrentTonerLevel": 50,
+            "paperCapacity": 100,
+            "status": "",
+            "Product Family": "Phaser 6510",
+            "Standard functions": "Print",
+            "Print speed": "up to 28 ppm",
+            "Duty cycle": "Up to 50,000 images/month1",
+            "Two-sided output": "Standard",
+            "Max print resolution": "Up to 1200 x 2400 dpi",
+            "Security features": "802.1x Authentication, IP filtering, IPSec, IPv6, LDAP (SASL), S/MIME, SNMPv3, Secure HTTPS (TLS), Secure Print",
+            "Paper capacity": {
+                "Tray": "50 sheets",
+                "Tray1": "250 sheets",
+                "Tray2": "550 sheets"
+            },
+            "Power consumption": "Operating: 380 W",
+            "Standby": "41 W ",
+            "Power save": " 0.9 W",
+            "Dimensions": "347 x 420 x 499 mm",
+            "Weight": "23.8 kg (min)"
+        },
+        {
+            "Model": "C400V/DN",
+            "CurrentTonerLevel": 25,
+            "paperCapacity": 110,
+            "status": "success",
+            "Product Family": "Phaser 6510",
+            "Standard functions": "Print",
+            "Print speed": "up to 28 ppm",
+            "Duty cycle": "Up to 50,000 images/month1",
+            "Two-sided output": "Standard",
+            "Max print resolution": "Up to 1200 x 2400 dpi",
+            "Security features": "802.1x Authentication, IP filtering, IPSec, IPv6, LDAP (SASL), S/MIME, SNMPv3, Secure HTTPS (TLS), Secure Print",
+            "Paper capacity": {
+                "Tray": "50 sheets",
+                "Tray1": "250 sheets",
+                "Tray2": "550 sheets"
+            },
+            "Power consumption": "Operating: 380 W",
+            "Standby": "41 W ",
+            "Power save": " 0.9 W",
+            "Dimensions": "347 x 420 x 499 mm",
+            "Weight": "23.8 kg (min)"
+        }
+    ]
+}
