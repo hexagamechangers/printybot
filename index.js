@@ -259,7 +259,7 @@ server.get('/api/getprinterlist', function (req, res) {
     fs.readFile("./app/data/printerdata.json", 'utf8', function (err, data) {
         if (err) throw err;
         var printerObj = JSON.parse(data);
-        res.send('result:' + JSON.stringify(printerObj));
+        res.send(JSON.stringify(printerObj));
     });
 
 });
