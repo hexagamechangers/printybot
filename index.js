@@ -289,7 +289,7 @@ server.get('/api/printerToner', function (req, res) {
             resultObj.printerlist = printerObj;
             fs.writeFile('./app/data/printerdata.json', JSON.stringify(resultObj), function (err) {
                 if (err) throw err;
-                res.send('success');
+                res.send(JSON.stringify({result: 'success'}));
             });
         }
     });
@@ -322,7 +322,7 @@ server.get('/api/paperCapacity', function (req, res) {
             resultObj.printerlist = printerObj;
             fs.writeFile('./app/data/printerdata.json', JSON.stringify(resultObj), function (err) {
                 if (err) throw err;
-                res.send('success');
+                res.send(JSON.stringify({result: 'success'}));
             });
         }
     });
@@ -351,7 +351,7 @@ server.get('/api/statusUpdate', function (req, res) {
             resultObj.printerlist = printerObj;
             fs.writeFile('./app/data/printerdata.json', JSON.stringify(resultObj), function (err) {
                 if (err) throw err;
-                res.send('success');
+                res.send(JSON.stringify({result: 'success'}));
             });
         }
     });
